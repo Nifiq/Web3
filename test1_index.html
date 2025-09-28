@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кубанский Государственный Университет</title>
+    <link rel="stylesheet" href="test1_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-inner">
+                <div class="logo">Лого</div>
+                <h1 class="site-title">Название сайта</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Ссылка меню 1</a></li>
+                        <li><a href="#">Ссылка меню 2</a></li>
+                        <li><a href="#">Ссылка меню 3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section id="links">
+                <h2>Список гиперссылок</h2>
+                <p>Ссылка 1: <a href="http://kubsu.ru">Абсолютная на главную страницу kubsu.ru (HTTP)</a></p>
+                <p>Ссылка 2: <a href="https://kubsu.ru">Абсолютная на главную страницу kubsu.ru (HTTPS)</a></p>
+                <p>Ссылка 3: <a href="#"><img src="imageWeb.png" alt="С изображением"></a></p>
+                <p>Ссылка 4: <a href="internal.html">Сокращённая на внутреннюю страницу</a></p>
+                <p>Ссылка 5: <a href="/">Сокращённая на главную страницу</a></p>
+                <p>Ссылка 6: <a href="#fragment">На фрагмент текущей страницы</a></p>
+                <p>Ссылка 7: <a href="?param1=1&param2=2&param3=3">С тремя параметрами в URL</a></p>
+                <p>Ссылка 8: <a href="?id=123">С параметром id в URL</a></p>
+                <p>Ссылка 9: <a href="same-dir.html">Относительная на страницу в текущем каталоге</a></p>
+                <p>Ссылка 10: <a href="about/page.html">Относительная на страницу в каталоге about</a></p>
+                <p>Ссылка 11: <a href="../upper.html">Относительная на страницу в каталоге уровнем выше</a></p>
+                <p>Ссылка 12: <a href="../../two-up.html">Относительная на страницу в каталоге двумя уровнями выше</a></p>
+                <p>Ссылка 13: Этот университет находится в <a href="https://kubsu.ru">Краснодаре</a>.</p>
+                <p>Ссылка 14: <a href="https://example.com#fragment">На фрагмент страницы стороннего сайта</a></p>
+                <p>Ссылка 15: Ссылки из прямоугольных и круглых областей картинки</p>
+                <img src="imageWeb.png" usemap="#image-map" alt="Image map">
+                <map name="image-map">
+                    <area shape="rect" coords="0,0,100,100" href="rect-link.html" alt="Rect link">
+                    <area shape="circle" coords="150,150,50" href="circle-link.html" alt="Circle link">
+                </map>
+                <p>Ссылка 16: <a href="">С пустым href</a></p>
+                <p>Ссылка 17: <a>Без href</a></p>
+                <p>Ссылка 18: <a href="#" rel="nofollow">Запрещена для перехода поисковикам</a></p>
+                <p>Ссылка 19: <a href="#" rel="noindex">запрещенную для индексации поисковиками</a></p>
+                <p>Ссылка 20: Нумерованный список ссылок с атрибутом title</p>
+                <ol>
+                    <li><a href="#" title="Title 1">Ссылка 20.1</a></li>
+                    <li><a href="#" title="Title 2">Ссылка 20.2</a></li>
+                    <li><a href="#" title="Title 3">Ссылка 20.3</a></li>
+                </ol>
+                <p>Ссылка 21: <a href="ftp://user:pass@ftp.example.com/file.txt">На файл на FTP-сервере с авторизацией</a></p>
+            </section>
+
+            <section id="table">
+                <h2>Таблица</h2>
+                <table class="styled-table">
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                        <th>Колонка 4</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Объединённая ячейка</td>
+                        <td colspan="2">Объединённая ячейка</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                        <td>Ячейка 24</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 31</td>
+                        <td>Ячейка 32</td>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 34</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td>Ячейка 42</td>
+                        <td>Ячейка 43</td>
+                        <td>Ячейка 44</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 51</td>
+                        <td>Ячейка 52</td>
+                        <td>Ячейка 53</td>
+                        <td>Ячейка 54</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 61</td>
+                        <td>Ячейка 62</td>
+                        <td>Ячейка 63</td>
+                        <td>Ячейка 64</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="form">
+                <h2>Форма обратной связи</h2>
+                <form action="#" method="post">
+                    <label for="fio">ФИО:</label>
+                    <input type="text" id="fio" name="fio"><br>
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate"><br>
+
+                    <p>Пол:</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Мужской</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Женский</label><br>
+
+                    <p>Любимый язык программирования:</p>
+                    <select name="programming" multiple>
+                        <option>Pascal</option>
+                        <option>C</option>
+                        <option>C++</option>
+                        <option>JavaScript</option>
+                        <option>PHP</option>
+                        <option>Python</option>
+                        <option>Java</option>
+                        <option>Haskell</option>
+                        <option>Clojure</option>
+                        <option>Prolog</option>
+                        <option>Scala</option>
+                    </select><br>
+
+                    <label for="bio">Биография:</label>
+                    <textarea id="bio" name="bio"></textarea><br>
+
+                    <input type="checkbox" id="contract" name="contract">
+                    <label for="contract">С контрактом ознакомлен(а)</label><br>
+
+                    <button type="submit">Сохранить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>(с) Всеволод Леонов</p>
+        </footer>
+    </div>
+</body>
+</html>
